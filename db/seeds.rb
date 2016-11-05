@@ -6,11 +6,9 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-
 states = {
     "AL": "Alabama",
     "AK": "Alaska",
-    "AS": "American Samoa",
     "AZ": "Arizona",
     "AR": "Arkansas",
     "CA": "California",
@@ -18,10 +16,8 @@ states = {
     "CT": "Connecticut",
     "DE": "Delaware",
     "DC": "District Of Columbia",
-    "FM": "Federated States Of Micronesia",
     "FL": "Florida",
     "GA": "Georgia",
-    "GU": "Guam",
     "HI": "Hawaii",
     "ID": "Idaho",
     "IL": "Illinois",
@@ -31,7 +27,6 @@ states = {
     "KY": "Kentucky",
     "LA": "Louisiana",
     "ME": "Maine",
-    "MH": "Marshall Islands",
     "MD": "Maryland",
     "MA": "Massachusetts",
     "MI": "Michigan",
@@ -47,13 +42,10 @@ states = {
     "NY": "New York",
     "NC": "North Carolina",
     "ND": "North Dakota",
-    "MP": "Northern Mariana Islands",
     "OH": "Ohio",
     "OK": "Oklahoma",
     "OR": "Oregon",
-    "PW": "Palau",
     "PA": "Pennsylvania",
-    "PR": "Puerto Rico",
     "RI": "Rhode Island",
     "SC": "South Carolina",
     "SD": "South Dakota",
@@ -61,7 +53,6 @@ states = {
     "TX": "Texas",
     "UT": "Utah",
     "VT": "Vermont",
-    "VI": "Virgin Islands",
     "VA": "Virginia",
     "WA": "Washington",
     "WV": "West Virginia",
@@ -69,6 +60,9 @@ states = {
     "WY": "Wyoming"
 }
 
+states.each do |ab, name|
+  State.create({name: name})
+end
 
 capitals = [
   {
@@ -322,3 +316,6 @@ capitals = [
     "longitude": 157.85
   }
 ]
+capitals.each do |city|
+  Capital.create({state: city[:state], name: city[:city]})
+end
