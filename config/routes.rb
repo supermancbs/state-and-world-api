@@ -1,8 +1,14 @@
 
 Rails.application.routes.draw do
 
-    get 'v1/national' => 'states#index'
-    get 'v2/national' => 'capitals#index'
-    get 'v1/world' => 'countries#index'
-    get 'v2/world' => 'countries#index'
+  namespace :v1 do
+    get 'national' => 'states#index'
+    get 'world' => 'countries#index'
+  end
+
+  namespace :v2 do
+    get 'national' => 'capitals#index'
+  end
+
+  get 'v2/world' => 'v1/countries#index'
 end
