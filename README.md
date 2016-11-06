@@ -20,7 +20,8 @@ $ rake db:create <br/>
 $ rake db:migrate <br/>
 $ rake db:seed <br/>
 
-You can now view the JSON at the end points locally.
+You can now view the JSON at the end points locally after starting a local server
+by typing rails s in the terminal.
 
 # Tests
 
