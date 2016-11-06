@@ -20,6 +20,8 @@ $ rake db:create <br/>
 $ rake db:migrate <br/>
 $ rake db:seed <br/>
 
+You can now view the JSON at the end points locally.
+
 # Tests
 
 The tests are located in the spec folder. If you wish to run the tests
@@ -30,3 +32,4 @@ In the terminal Run: <br/>
 $ rake db:seed RAILS_ENV=test </br>
 
 Then rerun rspec in your terminal. The tests should not be passing.
+Note: you must initially run rspec once before seeding the test database.
