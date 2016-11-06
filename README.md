@@ -20,7 +20,7 @@ $ rake db:create <br/>
 $ rake db:migrate <br/>
 $ rake db:seed <br/>
 
-You can now view the JSON at the end points locally after starting a local server
+You can now view the JSON at the end points after starting a local server
 by typing rails s in the terminal.
 
 # Tests
@@ -32,5 +32,5 @@ database is not seeded. <br/>
 In the terminal Run: <br/>
 $ rake db:seed RAILS_ENV=test </br>
 
-Then rerun rspec in your terminal. The tests should not be passing.
+Then rerun rspec in your terminal. The tests should now be passing.
 Note: you must initially run rspec once before seeding the test database.
