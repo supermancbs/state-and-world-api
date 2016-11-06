@@ -19,10 +19,11 @@ $ bundle install <br/>
 $ rake db:create <br/>
 $ rake db:migrate <br/>
 $ rake db:seed <br/>
+$ RAILS_ENV=development bundle exec rake db:seed <br/>
 $ rake db:seed RAILS_ENV=test <br/>
 
 # Tests
 
 The tests are located in the spec folder. If you wish to run the tests
-type rspec into your terminal. Make sure to run rake db:seed RAILS_ENV=test
+type rspec into your terminal. Make sure to run seed the test database
 first or else the test database is empty.
