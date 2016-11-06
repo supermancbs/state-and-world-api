@@ -1,3 +1,4 @@
+
 Rails.application.routes.draw do
 
     get 'v1/national' => 'states#index'
