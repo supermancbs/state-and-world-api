@@ -5,10 +5,10 @@ and countries in the world.
 
 The API is deployed to Heroku with the following end points:
 
-https://thawing-chamber-99958.herokuapp.com/v1/national
-https://thawing-chamber-99958.herokuapp.com/v1/world
-https://thawing-chamber-99958.herokuapp.com/v2/national
-https://thawing-chamber-99958.herokuapp.com/v2/world
+https://thawing-chamber-99958.herokuapp.com/v1/national <br/>
+https://thawing-chamber-99958.herokuapp.com/v1/world <br/>
+https://thawing-chamber-99958.herokuapp.com/v2/national <br/>
+https://thawing-chamber-99958.herokuapp.com/v2/world <br/>
 
 # Instructions
 
