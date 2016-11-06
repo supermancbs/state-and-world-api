@@ -27,6 +27,6 @@ type rspec into your terminal. The tests will initially fail because your test
 database is not seeded. <br/>
 
 In the terminal Run: <br/>
-rake db:seed RAILS_ENV=test </br>
+$ rake db:seed RAILS_ENV=test </br>
 
 Then rerun rspec in your terminal. The tests should not be passing.
