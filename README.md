@@ -15,11 +15,11 @@ https://thawing-chamber-99958.herokuapp.com/v2/world
 If you want to play with this API locally simply clone it, cd into it, and run
 the following commands into your terminal:
 
-$ bundle install
-$ rake db:create
-$ rake db:migrate
-$ rake db:seed
-$ rake db:seed RAILS_ENV=test
+$ bundle install <br/>
+$ rake db:create <br/>
+$ rake db:migrate <br/>
+$ rake db:seed <br/>
+$ rake db:seed RAILS_ENV=test <br/>
 
 # Tests
 
